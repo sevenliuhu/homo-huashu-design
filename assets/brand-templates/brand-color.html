@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企业品牌色盘展示 · 品牌规范参考</title>
+<style>
+  :root {
+    --primary: #C03C3C;
+    --primary-light: #D96C6C;
+    --primary-dark: #8C1C1C;
+    --secondary: #425066;
+    --secondary-light: #6B7B94;
+    --accent: #C5A55A;
+    --accent-light: #E0C88A;
+    --bg-light: #F5F2ED;
+    --bg-white: #FFFFFF;
+    --ink: #1A1A1A;
+    --ink-light: #666666;
+    --moon-white: #E6EAF0;
+    --pine-green: #A5B37A;
+    --bamboo: #789262;
+    --border: #E0D8D0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'PingFang SC', 'Noto Sans SC', -apple-system, sans-serif; background: var(--bg-light); color: var(--ink); line-height: 1.6; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  h1 { font-size: 36px; font-weight: 600; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .subtitle { font-size: 16px; color: var(--ink-light); margin-bottom: 48px; }
+  h2 { font-size: 24px; font-weight: 500; margin: 48px 0 24px; color: var(--secondary); }
+  .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  .color-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .color-swatch { height: 120px; position: relative; }
+  .color-info { padding: 12px 16px; }
+  .color-name { font-size: 14px; font-weight: 500; }
+  .color-hex { font-size: 12px; color: var(--ink-light); font-family: 'SF Mono', monospace; margin-top: 2px; }
+  .color-usage { font-size: 12px; color: var(--ink-light); margin-top: 4px; }
+  .section { margin-top: 64px; }
+  .typography-demo { margin: 24px 0; }
+  .typo-card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+  .typo-label { font-size: 12px; color: var(--ink-light); letter-spacing: 0.05em; margin-bottom: 8px; }
+  .h1-demo { font-size: 48px; font-weight: 700; line-height: 1.2; }
+  .h2-demo { font-size: 32px; font-weight: 600; line-height: 1.3; }
+  .h3-demo { font-size: 24px; font-weight: 500; line-height: 1.4; }
+  .body-demo { font-size: 16px; line-height: 1.6; }
+  .small-demo { font-size: 14px; line-height: 1.6; color: var(--ink-light); }
+  .note-demo { font-size: 12px; color: var(--ink-light); }
+  .usage-guide { background: white; border-radius: 12px; padding: 24px; }
+  .usage-guide h3 { font-size: 18px; margin-bottom: 16px; }
+  .usage-guide ul { list-style: none; }
+  .usage-guide li { padding: 8px 0; border-bottom: 1px solid var(--border); display: flex; gap: 12px; }
+  .usage-guide li:last-child { border: none; }
+  .usage-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 8px; flex-shrink: 0; }
+  .rule-demo { display: flex; gap: 24px; flex-wrap: wrap; }
+  .rule-card { background: white; border-radius: 12px; padding: 24px; flex: 1; min-width: 280px; }
+  .rule-card h3 { font-size: 16px; margin-bottom: 12px; }
+  .rule-card p { font-size: 14px; color: var(--ink-light); line-height: 1.6; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; }
+  .badge-primary { background: var(--primary); color: white; }
+  .badge-secondary { background: var(--secondary); color: white; }
+  .badge-accent { background: var(--accent); color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>品牌色盘规范参考</h1>
+  <p class="subtitle">品牌视觉系统中枢 · 所有设计物料以此为基准</p>
+
+  <!-- 主色盘 -->
+  <h2>🎨 品牌色盘</h2>
+  <div class="color-grid">
+    <div class="color-card">
+      <div class="color-swatch" style="background: #C03C3C;"></div>
+      <div class="color-info">
+        <div class="color-name">胭脂 · 品牌主色</div>
+        <div class="color-hex">#C03C3C</div>
+        <div class="color-usage">主按钮 / 品牌名 / 价格强调</div>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch" style="background: #D96C6C;"></div>
+      <div class="color-info">
+        <div class="color-name">胭脂浅 · 主色变体</div>
+        <div class="color-hex">#D96C6C</div>
+        <div class="color-usage">hover / 背景色 / 辅助</div>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch" style="background: #8C1C1C;"></div>
+      <div class="color-info">
+        <div class="color-name">胭脂深 · 主色变体</div>
+        <div class="color-hex">#8C1C1C</div>
+        <div class="color-usage">深色背景 / 强调</div>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch" style="background: #425066;"></div>
+      <div class="color-info">
+        <div class="color-name">黛蓝 · 辅色</div>
+        <div class="color-hex">#425066</div>
+        <div class="color-usage">副标题 / 卡片背景 / 导航栏</div>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch" style="background: #C5A55A;"></div>
+      <div class="color-info">
+        <div class="color-name">泥金 · 强调色</div>
+        <div class="color-hex">#C5A55A</div>
+        <div class="color-usage">高亮 / 徽章 / 装饰点缀</div>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch" style="background: #A5B37A;"></div>
+      <div class="color-info">
+        <div class="color-name">松花 · 辅助色</div>
+        <div class="color-hex">#A5B37A</div>
+        <div class="color-usage">成功状态 / 绿色品类</div>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch" style="background: #E6EAF0;"></div>
+      <div class="color-info">
+        <div class="color-name">月白 · 背景色</div>
+        <div class="color-hex">#E6EAF0</div>
+        <div class="color-usage">页面主背景 / 浅色模式</div>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch" style="background: #1A1A1A;"></div>
+      <div class="color-info">
+        <div class="color-name">墨黑 · 文字色</div>
+        <div class="color-hex">#1A1A1A</div>
+        <div class="color-usage">正文 / 标题 / 主要文字</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 字体规范 -->
+  <div class="section">
+    <h2>📝 字体规范</h2>
+
+    <div class="typo-card">
+      <div class="typo-label">H1· Display</div>
+      <div class="h1-demo">品牌与品质同行</div>
+      <div style="margin-top:8px;font-size:12px;color:#666;">
+        思源黑体 Heavy 48px · 字距 -0.01em · 行高 1.2
+      </div>
+    </div>
+
+    <div class="typo-card">
+      <div class="typo-label">H2· Section Title</div>
+      <div class="h2-demo">用匠心守护每一份信任</div>
+      <div style="margin-top:8px;font-size:12px;color:#666;">
+        思源黑体 Bold 32px · 字距 0 · 行高 1.3
+      </div>
+    </div>
+
+    <div class="typo-card">
+      <div class="typo-label">H3· Card Title</div>
+      <div class="h3-demo">让好产品自己说话</div>
+      <div style="margin-top:8px;font-size:12px;color:#666;">
+        思源黑体 Medium 24px · 字距 0 · 行高 1.4
+      </div>
+    </div>
+
+    <div class="typo-card">
+      <div class="typo-label">Body· 正文</div>
+      <div class="body-demo">
+        好的品牌设计不止是看得见的美，更是感觉得到的信任。
+        从第一个像素到最后一个字符，我们为每个品牌打造独一无二的视觉语言。
+        不是模板套用，不是 AI 生成的随机拼凑，而是深入理解品牌内核后的精准表达。
+      </div>
+      <div style="margin-top:8px;font-size:12px;color:#666;">
+        思源黑体 Regular 16px · 字距 0 · 行高 1.6
+      </div>
+    </div>
+
+    <div class="typo-card">
+      <div class="typo-label">Small· 辅助文字</div>
+      <div class="small-demo">如验证码或辅助说明文字通常使用较小字号 · © 2026 品牌名称 All Rights Reserved</div>
+      <div style="margin-top:8px;font-size:12px;color:#666;">
+        思源黑体 Regular 14px · 行高 1.6
+      </div>
+    </div>
+
+    <div class="typo-card">
+      <div class="typo-label">Note· 注释/脚注</div>
+      <div class="note-demo">* 最终解释权归品牌所有 · 数据截止至2026年5月</div>
+      <div style="margin-top:8px;font-size:12px;color:#666;">
+        思源黑体 Regular 12px · 行高 1.5
+      </div>
+    </div>
+  </div>
+
+  <!-- 使用规范 -->
+  <div class="section">
+    <h2>📋 使用规范</h2>
+    <div class="rule-demo">
+      <div class="rule-card">
+        <h3>Logo 使用</h3>
+        <p>
+          ⚫ 最小尺寸：web 48px / 印刷 20mm<br>
+          ⚫ 安全间距：logo 高度的 1/2<br>
+          ⚫ 浅底用深色版，深底用白色版<br>
+          ⚫ 不拉伸、不改色、不加描边<br>
+          ⚫ 不与任意元素共用空间
+        </p>
+      </div>
+      <div class="rule-card">
+        <h3>色彩使用</h3>
+        <p>
+          ⚫ 主色覆盖 ≤ 画面 30%<br>
+          ⚫ 强调色 ≤ 画面 10%<br>
+          ⚫ 禁止混入非品牌色系<br>
+          ⚫ 背景优先月白 · 次选白色<br>
+          ⚫ 文字用墨黑 · 次要文字用 #666
+        </p>
+      </div>
+      <div class="rule-card">
+        <h3>排版规范</h3>
+        <p>
+          ⚫ 标题 ≥ 正文 3 倍字号的差值<br>
+          ⚫ 行高：中文 1.5-1.8 / 英文 1.2-1.5<br>
+          ⚫ 间距系统：8/16/24/32/48/64px<br>
+          ⚫ 不连续使用 3 种以上字体<br>
+          ⚫ 中英文混排时英文使用相同 font-weight
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 使用指南 -->
+  <div class="section">
+    <h2>🎯 色值用途指南</h2>
+    <div class="usage-guide">
+      <h3>按场景分配</h3>
+      <ul>
+        <li><span class="usage-dot" style="background:#C03C3C;"></span><div><strong>胭脂 · 主色</strong><br>CTA按钮、价格强调、品牌名、标题、重要标签</div></li>
+        <li><span class="usage-dot" style="background:#425066;"></span><div><strong>黛蓝 · 辅色</strong><br>次级标题、卡片背景、导航栏、边界线</div></li>
+        <li><span class="usage-dot" style="background:#C5A55A;"></span><div><strong>泥金 · 强调色</strong><br>VIP标识、限量徽章、促销标签、装饰线</div></li>
+        <li><span class="usage-dot" style="background:#E6EAF0;"></span><div><strong>月白 · 背景色</strong><br>页面主背景、卡片浅底、表单区域</div></li>
+        <li><span class="usage-dot" style="background:#1A1A1A;"></span><div><strong>墨黑 · 文字色</strong><br>所有正文、标题、产品名、核心文字</div></li>
+        <li><span class="usage-dot" style="background:#A5B37A;"></span><div><strong>松花 · 辅助色</strong><br>成功状态、绿色健康标识</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
